@@ -1,0 +1,376 @@
+ @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap');
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Rubik';
+ }
+
+ header {
+   background-color: #331763;
+   padding: 20px;
+ }
+
+ header a {
+   text-decoration: none;
+ }
+
+ header h1 {
+   font-size: 60px;
+   color: #fff;
+ }
+
+ main {
+   margin: 50px 0;
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   gap: 50px;
+ }
+
+ .table {
+   grid-column-start: 1;
+   grid-column-end: 6;
+ }
+
+ .form {
+   grid-column-start: 6;
+   grid-column-end: 9;
+ }
+
+ .table {
+   display: flex;
+   justify-content: center;
+ }
+
+ table {
+   border: none;
+   border-collapse: collapse;
+   height: max-content;
+ }
+
+ table td {
+   padding: 8px 15px;
+   min-width: min-content;
+   text-align: center;
+   height: 40px;
+
+ }
+
+ table tr:nth-child(odd) {
+   background-color: #f2f2f2;
+ }
+
+ table tr:hover {
+   background-color: #ddd;
+   cursor: pointer;
+ }
+
+ table th {
+   min-width: min-content;
+
+   height: 30px;
+   padding: 12px 15px;
+   text-align: center;
+   background-color: #331763;
+   color: white;
+
+ }
+
+ td:first-child,
+ th:first-child {
+   border-radius: 10px 0 0 10px;
+ }
+
+ td:last-child,
+ th:last-child {
+   border-radius: 0 10px 10px 0;
+ }
+
+ table tr:nth-child(even) button {
+   background-color: #ddd;
+ }
+ table a{
+  text-decoration: none;
+  color: black;
+  transition: 0.25s ease-in;
+ }
+ table a.blue{
+  color: #331763;
+  font-weight: 500;
+ }
+
+ table tr:nth-child(even) button:hover {
+   background-color: #331763;
+ }
+
+ table button {
+   padding: 2px 5px;
+   background-color: #fff;
+   border-radius: 6px;
+   border: none;
+   margin: 0 10px;
+   transition: 0.25s ease;
+ }
+
+ table button:hover {
+   background-color: #331763;
+   color: white;
+   cursor: pointer;
+ }
+ table button:hover a{
+  color: #fff;
+ }
+
+ .form {
+   display: flex;
+   justify-content: center;
+ }
+ .form-div{
+  width: 500px;
+  background-color: #f2f2f2;
+  border-radius: 0 0 30px 30px;
+  height: max-content;
+ }
+
+ form {
+   display: flex;
+   flex-direction: column;
+   margin: 0 40px;
+   padding: 30px  0;
+   border-radius: 35px;
+   background-color: #f2f2f2;
+   width:440px;
+   border-radius: 0 0 30px 30px;
+ }
+ .form-div h2{
+  margin: auto;
+  color: #fff;
+  text-align: center;
+  background-color: #331763;
+  width: 100%;
+  padding: 20px;
+  border-radius: 30px 30px 0 0;
+ }
+
+ form .outer-div {
+   width: 100%;
+   display: flex;
+ }
+
+ form .inner-div {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+ }
+
+ .inner-div input {
+   width: 95%;
+ }
+ form select{
+  min-width: min-content;
+   margin: 0px 0;
+   font-size: 14px;
+   border: transparent;
+   border-radius: 10px;
+   padding: 5px 10px;
+   color: rgb(66, 66, 66);
+   font-weight: 400;
+ }
+ .this{
+  width: 50px;
+  align-self: center;
+ }
+ .form-div-1{
+  display: flex;
+  flex-direction: column;
+ }
+
+ form input {
+   padding: 0 15px;
+   width: 1500px;
+   width: 95%;
+   margin: 0 0 15px 0;
+   height: 30px;
+   border-radius: 10px;
+   border: 2px solid transparent;
+   color: #3c3c3c;
+ }
+
+ form input:focus {
+   outline: 2px solid #5f5fc4;
+ }
+
+ form label {
+   margin: 5px;
+   font-size: 20px;
+ }
+
+ form button {
+   width: 100px;
+   font-size: 20px;
+   padding: 5px 0;
+   align-self: center;
+   background-color: #331763;
+   color: #fff;
+   border-radius: 10px;
+   transition: 0.2s ease-in;
+ }
+
+ form button:hover {
+   background-color: greenyellow;
+   opacity: 0.9;
+   color: black;
+   border: 2px solid transparent;
+   cursor: pointer;
+ }
+
+
+
+
+ /* Student Details Page */
+ .student-details h1 {
+   margin: 30px;
+ }
+
+ .student-details-headings {
+   padding: 20px 40px;
+   background-color: #f2f2f2;
+   border-radius: 40px;
+   width: 80%;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   gap: 30px;
+ }
+
+ .student-details-headings h1 {
+   grid-column: 1/7;
+   font-size: 50px;
+   text-align: center;
+   color: #331763;
+ }
+
+ .student-details-headings img {
+   grid-column: 7/9;
+   grid-row: span 2;
+   margin: auto;
+   width: 200px;
+   height: 200px;
+   border-radius: 10px;
+   /* background-color: red; */
+ }
+
+ .student-details-headings div {
+   grid-column: span 2;
+   padding: 10px;
+   font-size: 25px;
+ }
+
+ .bold {
+   font-size: 30px;
+   color: #331763;
+   font-weight: 500;
+ }
+
+
+ .other-details {
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   gap: 20px;
+   margin: 50px auto;
+   padding: 40px;
+   width: 80%;
+   background-color: #f2f2f2;
+   border-radius: 50px;
+ }
+
+ .other-details div {
+   grid-column: span 2;
+   font-size: 25px;
+   padding: 5px 15px;
+   color: #331763;
+   font-weight: 500;
+ }
+
+ .other-details div p {
+   margin: 0 10px;
+ }
+
+ .other-details div input {
+   width: 300px;
+   margin: 5px 0;
+   font-size: 20px;
+   border: transparent;
+   border-radius: 20px;
+   padding: 2px 10px;
+   color: rgb(66, 66, 66);
+   font-weight: 400;
+ }
+
+ .other-details div select {
+   font-size: 18px;
+   border-radius: 10px;
+   padding: 2px 15px;
+   margin: 5px 0;
+   border: none;
+   box-shadow: none;
+   min-width: 150px;
+   border: 2px solid transparent;
+ }
+
+ .other-details div select:focus {
+   border: 2px solid #6666d7;
+ }
+
+
+ .other-details div input:focus {
+   outline: 2px solid #6b6bd1;
+ }
+
+ .other-details button {
+   grid-column: span 6;
+   margin: auto;
+   width: 100px;
+   font-size: 20px;
+   padding: 5px 0;
+   align-self: center;
+   background-color: #331763;
+   color: #fff;
+   border-radius: 10px;
+   transition: 0.2s ease-in;
+ }
+
+ .other-details button:hover {
+   background-color: greenyellow;
+   opacity: 0.9;
+   color: black;
+   border: 2px solid transparent;
+   cursor: pointer;
+ }
+
+ /* Chrome, Safari, Edge, Opera */
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+ }
+
+ /* Firefox */
+ input[type=number] {
+   -moz-appearance: textfield;
+ }
+ #updated{
+  position: fixed;
+  left: 35%;
+  top: 40%;
+  display: none;
+  /* margin: auto; */
+  border: 2px solid #ddd;
+  font-weight: 500;
+  padding: 100px 150px;
+  border-radius: 50px;
+  font-size: 40px;
+  color: #331763;
+  background-color: #fff;
+ }
